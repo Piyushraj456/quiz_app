@@ -145,7 +145,7 @@ const Quiz = () => {
             ))}
           </ul>
           {isAnswered && (
-            <button onClick={handleNext}>
+            <button onClick={handleNext} className="btn next">
               {index < quizData.length - 1 ? "Next" : "Finish"}
             </button>
           )}

@@ -60,7 +60,9 @@ hr {
   }
   .settings-container button {
     font-size: 16px;
+    text-align: center;
   }
+ 
   input {
     height: 45px;
   }
