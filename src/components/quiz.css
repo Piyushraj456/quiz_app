@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,44 +9,44 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Container styles */
+
 .container {
-  width: 90%; /* Adjust width to fit smaller screens */
+  width: 90%; 
   max-width: 550px;
   margin: auto;
   padding: 20px;
-  margin-top: 20px; /* Adjust top margin for smaller screens */
+  margin-top: 20px; 
   background: white;
   color: black;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visual */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Horizontal rule */
+
 .container hr {
   height: 2px;
   border: none;
   background: grey;
 }
 
-/* Heading */
+
 .container h4 {
-  font-size: 16px; /* Adjust font size for smaller screens */
+  font-size: 16px; 
   font-weight: 500;
 }
 
-/* List items */
+
 .container ul li {
   display: flex;
   align-items: center;
-  height: 40px; /* Reduce height for mobile */
-  padding-left: 10px; /* Reduce padding for mobile */
+  height: 40px; 
+  padding-left: 10px;
   border: 1px solid grey;
-  font-size: 16px; /* Adjust font size for smaller screens */
-  margin-bottom: 15px; /* Reduce margin for mobile */
+  font-size: 16px; 
+  margin-bottom: 15px;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -57,22 +57,23 @@ body {
   height: 35px;
   padding: 7px;
   background: rgb(146, 240, 146);
-  font-size: 16px; /* Adjust font size for smaller screens */
+  font-size: 16px; 
   font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 200px;
 }
 button:hover {
-  transform: scale(1.05); /* Adjust scale for mobile */
+  transform: scale(1.05); 
   transition: ease-in-out;
 }
 
-/* Index */
 .container .index {
-  font-size: 16px; /* Adjust font size for smaller screens */
+  font-size: 16px;
+  margin-left: 190px;
 }
 
-/* Score container */
+
 .score-container {
   display: flex;
   flex-direction: column;
@@ -80,11 +81,11 @@ button:hover {
   margin-top: 20px;
 }
 
-/* Score circle */
+
 .score-circle {
   position: relative;
-  width: 120px; /* Adjust width for smaller screens */
-  height: 120px; /* Adjust height for smaller screens */
+  width: 120px; 
+  height: 120px; 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -92,26 +93,29 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* Score text */
+
 .score-text {
-  font-size: 20px; /* Adjust font size for smaller screens */
+  font-size: 20px; 
   font-weight: bold;
   position: absolute;
   text-align: center;
 }
 
-/* Emoji */
+
 .emoji {
   position: absolute;
   bottom: -30px;
-  font-size: 30px; /* Adjust font size for smaller screens */
+  font-size: 30px; 
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 600px) {
   .container {
     padding: 15px;
     margin-top: 10px;
+  }
+  .container .index{
+    margin-left: 120px;
   }
   .container h4 {
     font-size: 14px;
@@ -126,6 +130,7 @@ button:hover {
     width: 90px;
     height: 30px;
     font-size: 14px;
+    margin-left: 140px;
   }
   .score-circle {
     width: 100px;
